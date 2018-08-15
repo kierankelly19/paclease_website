@@ -6,305 +6,375 @@
     <title>Order Stuff</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <img src="img/pactrac_logo.png">
-    <h2>PacTrac USA Order Form</h2>
-    <h4>Four Step Ordering Process</h4>
-    <img src="img/trimble_logo.png">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-right">
+          <img src="img/pactrac_logo.png">
+        </div>
+        <div class="col">
+          <h2 class="text-center">PacTrac USA Order Form</h2>
+          <h4 class="text-center">Four Step Ordering Process</h4>
+        </div>
+        <div class="col float-left">
+          <img src="img/trimble_logo.png">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form class="form" action="something">
+        <div class=container>
+          <div class="row">
+            <div class="col">
+              <h4>Step 1: <small>Select a Factory Installed or Non-Factory Installed Option</small></h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-center">Number of Factory Fit Devices (PMG)</p>
+              <input  class="text-right" type="number" value="0">
+            </div>
+            <div class="col text-center">
+              <p class="text-center">Number of Non-Factory Fit Devices (PCG)</p>
+              <input class="text-right" type="number" value="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <img class="img-fluid" src="img/PMG.png">
+            </div>
+            <div class="col text-center">
+              <img src="img/PCG.png">
+            </div>
+          </div>
+        </div>
+        <div class=container>
+          <h4>Step 2: <small>Select a Service Plan & Add-Ons</small></h4>
 
-    <form class="form" action="something">
-      <h4>Step 1: <small>Select a Factory Installed or Non-Factory Installed Option</small></h4>
-      <p>Number of Factory Fit Devices (PMG)</p>
-      <input type="number" value="0">
-      <p>Number of Non-Factory Fit Devices (PCG)</p>
-      <input type="number" value="0">
-      <br>
-      <h4>Step 2: <small>Select a Service Plan & Add-Ons</small></h4>
+          <table class="table table-hover">
+            <thead class="thead-dark">
+            <tr>
+              <th>Features & Functionality</th>
+              <th class="text-center">Basic ($15) <br><input class="text-right" type="number" value="0"></th>
+              <th class="text-center">Professional ($26) <br><input class="text-right" type="number" value="0"></th>
+              <th class="text-center">Business ($40) <br><input class="text-right" type="number" value="0"></th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PacTax Data Feet (fuel tax)</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Automated Vehicle Updates (48 timed transactions)</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Back-Office Monitoring</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Productivity Reporting</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Geo-Fencing & Landmark Management</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Behavior/Performance Notifications (SA, SD, Speeding, Preventative Maintenance Alerts, etc)</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Vehicle Performance Reporting</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Activity Standards</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Fault Codes (PMG Only)</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>ALK Traffic & Weather (back-office)</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>ELD</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>AOBRD</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>eDVIR (standard)</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>eDVIR (plus) ELD Only-Not Integrated</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Messaging</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>In-Cab Performance Dashboards</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Safe-Mode Screen</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Driver Based Reporting</td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Dashboard Reporting (birst)</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Onboard Event Recorder</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center">X</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th colspan="4">Additional Features & Functionality (Fill In Quantity)</th>
+                <!-- <th> </th>
+                <th> </th>
+                <th> </th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Speed Gauge <small>($3.00 Per Truck, Per Month)</small></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>Tire Pressure Monitoring <small>($2.50 Per Truck, Per Month)</small></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>State Miles & Audit Detail Report <small>($3.00 Per Truck, Per Month)</small></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>Safety Analytics (requires additional paperwork) <small>($5.00 Per Truck, Per Month)</small></td>
+                <td>N/A</td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>In-Cab Navigation <small>($8.00 Per Truck, Per Month)</small></td>
+                <td>N/A</td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>Route Compliance (Requires In-Cab Navigation) <small>($2.00 Per Truck, Per Month)</small></td>
+                <td>N/A</td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+              <tr>
+                <td>Drivewyze (requires additional paperwork and signed addendum) <small>($15.75 Per Truck, Per Month)</small></td>
+                <td>N/A</td>
+                <td><input class="text-right" type="number" value="0"></td>
+                <td><input class="text-right" type="number" value="0"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h4>Step 3: <small>Select Display Option<small> *Required only for Professional and Business Options</small></small></h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center" style="border:solid">
+              <img src="img/PD5.png" style="border:solid">
+            </div>
+            <div class="col text-center" style="border:solid">
+              <img src="img/PCT.png" style="border:solid">
+            </div>
+            <div class-"col text-center" style="border:solid">
+              <img src="img/Samsung-Tab-A.png" style="border:solid">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center" style="border:solid">
+              <p>Number of PD5 Displays</p>
+              <input class="text-right" type="number" value="0">
+            </div>
+            <div class="col text-center" style="border:solid">
+              <p>Number of PeopleNet Connected Tablet Displays</p>
+              <input class="text-right" type="number" value="0">
+            </div>
+            <div class-"col text-center" style="border:solid">
+              <p>Number of Samsung Tab-A Displays</p>
+              <input class="text-right" type="number" value="0">
+            </div>
+          </div>
+        </div>
 
-      <table border="solid">
-        <tr>
-          <th>Features & Functionality</th>
-          <th>Basic ($15) <br><input type="number" value="0"></th>
-          <th>Professional ($26) <br><input type="number" value="0"></th>
-          <th>Business ($40) <br><input type="number" value="0"></th>
-        </tr>
-        <tr>
-          <td>PacTax Data Feet (fuel tax)</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Automated Vehicle Updates (48 timed transactions)</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Back-Office Monitoring</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Productivity Reporting</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Geo-Fencing & Landmark Management</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Behavior/Performance Notifications (SA, SD, Speeding, Preventative Maintenance Alerts, etc)</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Vehicle Performance Reporting</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Activity Standards</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Fault Codes (PMG Only)</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>ALK Traffic & Weather (back-office)</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>ELD</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>AOBRD</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>eDVIR (standard)</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>eDVIR (plus) ELD Only-Not Integrated</td>
-          <td> </td>
-          <td> </td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Messaging</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>In-Cab Performance Dashboards</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Safe-Mode Screen</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Driver Based Reporting</td>
-          <td> </td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Dashboard Reporting (birst)</td>
-          <td> </td>
-          <td> </td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Onboard Event Recorder</td>
-          <td> </td>
-          <td></td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <th>Additional Features & Functionality (Fill In Quantity)</th>
-          <th> </th>
-          <th> </th>
-          <th> </th>
-        </tr>
-        <tr>
-          <td>Speed Gauge <small>($3.00 Per Truck, Per Month)</small></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>Tire Pressure Monitoring <small>($2.50 Per Truck, Per Month)</small></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>State Miles & Audit Detail Report <small>($3.00 Per Truck, Per Month)</small></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>Safety Analytics (requires additional paperwork) <small>($5.00 Per Truck, Per Month)</small></td>
-          <td>N/A</td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>In-Cab Navigation <small>($8.00 Per Truck, Per Month)</small></td>
-          <td>N/A</td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>Route Compliance (Requires In-Cab Navigation) <small>($2.00 Per Truck, Per Month)</small></td>
-          <td>N/A</td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-        <tr>
-          <td>Drivewyze (requires additional paperwork and signed addendum) <small>($15.75 Per Truck, Per Month)</small></td>
-          <td>N/A</td>
-          <td><input type="number" value="0"></td>
-          <td><input type="number" value="0"></td>
-        </tr>
-      </table>
-      <br>
-      <h4>Step 3: <small>Select Display Option<small> *Required only for Professional and Business Options</small></small></h4>
-      <p>PD5</p>
-      <input type="number" value="0">
-      <p>PeopleNet Connected Tablet</p>
-      <input type="number" value="0">
-      <p>Samsung-Tab-A</p>
-      <input type="number" value="0">
+        <h4>Step 4: <small>Select Training Option<small> *Required only for Professional and Business Options</small></small></h4>
+        <p>Level 1: Online</p>
+        <input class="text-right" type="number" value="0">
+        <p>Level 2: Hosted MN</p>
+        <input class="text-right" type="number" value="0">
+        <p>Level 3: 2 Day Onsite</p>
+        <input class="text-right" type="number" value="0">
 
-      <h4>Step 4: <small>Select Training Option<small> *Required only for Professional and Business Options</small></small></h4>
-      <p>Level 1: Online</p>
-      <input type="number" value="0">
-      <p>Level 2: Hosted MN</p>
-      <input type="number" value="0">
-      <p>Level 3: 2 Day Onsite</p>
-      <input type="number" value="0">
-
-      <h4>Order Information</h4>
-      <label> Purchase Order Number:</label>
-      <input type="text" value="">
-      <label>Date:</label>
-      <input type="date" value="">
-      <h4>Franchise Billing Information</h4>
-      <label> Name:</label>
-      <input type="text" value="">
-      <label> Franchise Name:</label>
-      <input type="text" value="">
-      <br>
-      <label> Franchise Code:</label>
-      <input type="text" value="">
-      <label> PFM Number:</label>
-      <input type="number" value="">
-      <label> Email:</label>
-      <input type="email" value="">
-      <br>
-      <label> Phone Number:</label>
-      <input type="tel" value="">
-      <label> Street Address:</label>
-      <input type="text" value="">
-      <br>
-      <label> City:</label>
-      <input type="text" value="">
-      <label> State:</label>
-      <input type="text" value="">
-      <label> Zip Code:</label>
-      <input type="number" value="">
-      <h4>Shipping Information <small>check if same as Billing Information</small><input type="checkbox"></h4>
-      <label> Name:</label>
-      <input type="text" value="">
-      <label> Franchise Name:</label>
-      <input type="text" value="">
-      <br>
-      <label> Franchise Code:</label>
-      <input type="text" value="">
-      <label> PFM Number:</label>
-      <input type="number" value="">
-      <label> Email:</label>
-      <input type="email" value="">
-      <br>
-      <label> Phone Number:</label>
-      <input type="tel" value="">
-      <label> Street Address:</label>
-      <input type="text" value="">
-      <br>
-      <label> City:</label>
-      <input type="text" value="">
-      <label> State:</label>
-      <input type="text" value="">
-      <label> Zip Code:</label>
-      <input type="number" value="">
-      <p>All shipments will ship UPS Ground unless noted differently here <input type="text" value=""> (Additional cost will apply)</p>
-      <h4>End User Information:</h4>
-      <label> Fleet Name:</label>
-      <input type="text" value="">
-      <br>
-      <label> Contact Name:</label>
-      <input type="text" value="">
-      <label> email:</label>
-      <input type="email" value="">
-      <br>
-      <label> Phone Number:</label>
-      <input type="tel" value="">
-      <label> Street Address:</label>
-      <input type="text" value="">
-      <br>
-      <label> City:</label>
-      <input type="text" value="">
-      <label> State:</label>
-      <input type="text" value="">
-      <label> Zip Code:</label>
-      <input type="number" value="">
-      <h5>Please include any additional part numbers from Supplemental Guide found on DealerNet</h5>
-      <table border="solid">
-        <tr>
-          <th>Description</th>
-          <th>Part Number</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td><input type="text" value=""></td>
-          <td><input type="text" value=""></td>
-          <td><input type="text" value=""></td>
-          <td><input type="text" value=""></td>
-        </tr>
-      </table>
-    </form>
+        <h4>Order Information</h4>
+        <label> Purchase Order Number:</label>
+        <input type="text" value="">
+        <label>Date:</label>
+        <input type="date" value="">
+        <h4>Franchise Billing Information</h4>
+        <label> Name:</label>
+        <input type="text" value="">
+        <label> Franchise Name:</label>
+        <input type="text" value="">
+        <br>
+        <label> Franchise Code:</label>
+        <input type="text" value="">
+        <label> PFM Number:</label>
+        <input type="number" value="">
+        <label> Email:</label>
+        <input type="email" value="">
+        <br>
+        <label> Phone Number:</label>
+        <input type="tel" value="">
+        <label> Street Address:</label>
+        <input type="text" value="">
+        <br>
+        <label> City:</label>
+        <input type="text" value="">
+        <label> State:</label>
+        <input type="text" value="">
+        <label> Zip Code:</label>
+        <input type="number" value="">
+        <h4>Shipping Information <small>check if same as Billing Information</small><input type="checkbox"></h4>
+        <label> Name:</label>
+        <input type="text" value="">
+        <label> Franchise Name:</label>
+        <input type="text" value="">
+        <br>
+        <label> Franchise Code:</label>
+        <input type="text" value="">
+        <label> PFM Number:</label>
+        <input type="number" value="">
+        <label> Email:</label>
+        <input type="email" value="">
+        <br>
+        <label> Phone Number:</label>
+        <input type="tel" value="">
+        <label> Street Address:</label>
+        <input type="text" value="">
+        <br>
+        <label> City:</label>
+        <input type="text" value="">
+        <label> State:</label>
+        <input type="text" value="">
+        <label> Zip Code:</label>
+        <input type="number" value="">
+        <p>All shipments will ship UPS Ground unless noted differently here <input type="text" value=""> (Additional cost will apply)</p>
+        <h4>End User Information:</h4>
+        <label> Fleet Name:</label>
+        <input type="text" value="">
+        <br>
+        <label> Contact Name:</label>
+        <input type="text" value="">
+        <label> email:</label>
+        <input type="email" value="">
+        <br>
+        <label> Phone Number:</label>
+        <input type="tel" value="">
+        <label> Street Address:</label>
+        <input type="text" value="">
+        <br>
+        <label> City:</label>
+        <input type="text" value="">
+        <label> State:</label>
+        <input type="text" value="">
+        <label> Zip Code:</label>
+        <input type="number" value="">
+        <h5>Please include any additional part numbers from Supplemental Guide found on DealerNet</h5>
+        <table border="solid">
+          <tr>
+            <th>Description</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+          </tr>
+        </table>
+      </form>
+    </div>
   </body>
   </html>
