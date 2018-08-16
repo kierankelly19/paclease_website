@@ -13,19 +13,20 @@
 
   <body>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col text-right">
-          <img src="img/pactrac_logo.png">
+          <img class="img-fluid height" src="img/pactrac_logo.png">
         </div>
         <div class="col">
-          <h2 class="text-center">PacTrac USA Order Form</h2>
-          <h4 class="text-center">Four Step Ordering Process</h4>
+          <h1 class="text-center">PacTrac USA Order Form</h1>
+          <h3 class="text-center">Four Step Ordering Process</h3>
         </div>
         <div class="col float-left">
-          <img src="img/trimble_logo.png">
+          <img class="img-fluid" src="img/trimble_logo.JPG">
         </div>
       </div>
     </div>
+    <br>
     <div class="container">
       <form class="form" action="something">
         <div class=container>
@@ -193,10 +194,10 @@
           <table class="table table-hover">
             <thead class="thead-dark">
               <tr>
-                <th colspan="4">Additional Features & Functionality (Fill In Quantity)</th>
-                <!-- <th> </th>
-                <th> </th>
-                <th> </th> -->
+                <th>Additional Features & Functionality (Fill In Quantity)</th>
+                <th class="text-center">Basic</th>
+                <th class="text-center">Professional</th>
+                <th class="text-center">Business</th>
               </tr>
             </thead>
             <tbody>
@@ -302,11 +303,11 @@
           <div class="row">
             <div class="col">
               <label> Purchase Order Number:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label>Date:</label>
-              <input class="form-control" type="date" value="">
+              <input class="form-control" type="date" value="" required>
             </div>
           </div>
           <br>
@@ -318,103 +319,105 @@
           <div class="row">
             <div class="col">
               <label> Name:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Franchise Name:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Franchise Code:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> PFM Number:</label>
-              <input class="form-control" type="number" value="">
+              <input class="form-control" type="number" value="" required>
             </div>
             <div class="col">
               <label> Email:</label>
-              <input class="form-control" type="email" value="">
+              <input class="form-control" type="email" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Phone Number:</label>
-              <input class="form-control" type="tel" value="">
+              <input class="form-control" type="tel" value="" required>
             </div>
             <div class="col">
               <label> Street Address:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> City:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> State:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Zip Code:</label>
-              <input class="form-control" type="number" value="">
+              <input class="form-control" type="number" value="" required>
             </div>
           </div>
           <br>
-          <div class="row">
-            <div class="col">
-              <h4>Shipping Information <small>check if same as Billing Information</small><input type="checkbox"></h4>
-            </div>
+          <div class="form-check form-check-inline">
+            <h4>
+              Shipping Information
+              <label class="form-check-label"><small>Check if same as Billing Information</small></label>
+              <input class="form-check-input" type="checkbox" id="checkbox-same-as-before">
+            </h4>
           </div>
           <div class="row">
             <div class="col">
               <label> Name:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Franchise Name:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Franchise Code:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> PFM Number:</label>
-              <input class="form-control" type="number" value="">
+              <input class="form-control" type="number" value="" required>
             </div>
             <div class="col">
               <label> Email:</label>
-              <input class="form-control" type="email" value="">
+              <input class="form-control" type="email" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Phone Number:</label>
-              <input class="form-control" type="tel" value="">
+              <input class="form-control" type="tel" value="" required>
             </div>
             <div class="col">
               <label> Street Address:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> City:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> State:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Zip Code:</label>
-              <input class="form-control" type="number" value="">
+              <input class="form-control" type="number" value="" required>
             </div>
           </div>
           <div class="row">
@@ -431,41 +434,41 @@
           <div class="row">
             <div class="col">
               <label> Fleet Name:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Contact Name</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Email:</label>
-              <input class="form-control" type="email" value="">
+              <input class="form-control" type="email" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> Phone Number:</label>
-              <input class="form-control" type="tel" value="">
+              <input class="form-control" type="tel" value="" required>
             </div>
             <div class="col">
               <label> Street Address:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label> City:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> State:</label>
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" value="" required>
             </div>
             <div class="col">
               <label> Zip Code:</label>
-              <input class="form-control" type="number" value="">
+              <input class="form-control" type="number" value="" required>
             </div>
           </div>
         </div>
@@ -492,6 +495,10 @@
           </table>
         </div>
         <br>
+        <div class="container text-right">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <br>
+        </div>
       </form>
     </div>
   </body>
